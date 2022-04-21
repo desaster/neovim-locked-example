@@ -1,0 +1,17 @@
+#!/bin/sh
+
+BASEDIR="$(dirname $0)"
+
+if [ "$BASEDIR" == "" ]
+then
+    echo "Couldn't figure out working directory!"
+    exit 2
+fi
+
+XDG_CONFIG_HOME=$BASEDIR/config \
+    XDG_CACHE_HOME=$BASEDIR/cache \
+    XDG_DATA_HOME=$BASEDIR/data \
+    XDG_STATE_HOME=$BASEDIR/state \
+    nvim $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+# $* doesn't work quite right with stuff like -c 'foo bar'

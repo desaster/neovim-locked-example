@@ -8,7 +8,7 @@ In this repository I'm attempting to create a simple configuration, where:
 * packer configuration will install these exact versions of packages, no extra fuss
 * during startup, no "revert snapshot" operations are executed
 
-*STATUS: experimental! not a working example!*
+Status: **~~EXPERIMENTAL~~, NOT WORKING PROPERLY ⚠️**
 
 ## What is included
 
@@ -61,5 +61,5 @@ If not successful, it might display something like this:
 Did we actually get the package version we wanted?
 
   version of lualine.nvim requested by snapshot file: "13ead78"
-  actual version of lualine.nvim: 13ead784c4219478d329dea1d4ab733dde5eb438
+  actual version of lualine.nvim: **18a07f790ed7ed1f11d1b130c02782e9dfd8dd7d**
 ```
